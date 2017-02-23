@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index_demo</title>
+	<script type="text/javascript" src="scripts/jquery-1.8.0.min.js"></script>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.main{
+		height: 900px;
+		width: 100%;
+		background: #DBDBDB;
+	}
+	.btnBar{
+		height: 200px;
+		width: 	100px;
+		position: fixed;
+		top:100px;
+		left:50px;
+		z-index: 999;
+	}
+	#btnBox1{
+		height: 100px;
+		width: 100px;
+		background: #1E90FF;
+		opacity:0.9;
+		border:solid 3px #fff;
+		box-shadow: 4px 4px 3px #555;
+		position: absolute;
+	}
+	#btnBox2{
+		position: absolute;
+		top:110px;
+		margin-top: 10px;
+		height: 100px;
+		width: 100px;
+		background: #EE3B3B;
+		opacity: 0.9;
+		border:solid 3px #fff;
+		box-shadow: 4px 4px 3px #555;
+	}
+	.btn_style1{		
+		background: #ffffff;
+		opacity: 0.5;
+		float: left;
+		margin-left: 4px;
+		margin-top: 4px;
+		position: relative;
+		height: 28px;
+		width: 28px;
+		top: 0px;
+		transition:all 0.2s ease-out;
+	}
+	.btn_style2{
+		margin-top: 4px;
+		margin-left: 4px;
+		height: 28px;
+		width: 92px;
+	}
+	.btn_style3_1{
+		height: 28px;
+		width: 28px;
+		background: #ffffff;
+		opacity: 0.5;
+		box-shadow: 2px 2px 1px #555;
+		float: left;
+	}
+	.btn_style3_2{
+		overflow: hidden;
+		position: relative;
+		height: 25px;
+		width: 62px;
+		margin-left: 30px;	
+	}
+	.btn_style3_3{
+		height: 25px;
+		width: 62px;
+		background: #ffffff;
+		opacity: 0.5;
+		margin-top: 2px;
+		margin-left: 0px;
+		transition:all 0.3s ease;
+	}
+	.item{
+		position: absolute;
+		margin-top: 30px;
+		margin-left: 40px;
+		transition:all 0.3s ease;
+		height: 250px;
+		width: 600px;
+		z-index: 500;
+	}
+	.item2{
+		left:660px;
+	}
+	.item3{
+		top:280px;
+	}
+	.item4{
+		left:660px;
+		top:280px;
+	}
+	.item5{
+		top:550px;
+	}
+	.item6{
+		left: 660px;
+		top: 550px;
+	}
+	.img{
+		background: url(black1.png) no-repeat;
+		height: 250px;
+		width: 180px;
+		float: left;
+		z-index: 600;
+	}
+	.detail_cntr{
+		float: left;
+		height: 250px;
+		width: 300px;
+		overflow: hidden;
+		position: relative;
+		z-index: 0;
+	}
+	.detail{
+		background: #fff;
+		height: 250px;
+		width: 300px;
+		position: absolute;
+		left: -300px;
+		transition:all 0.3s ease;
+		z-index: 0;
+	}
+	.text{
+		position: absolute;
+		top:70px;
+		font-family: "Microsoft YaHei";
+		color: #000;
+		font-size: 40px;
+		font-weight: bold;
+	}
+	</style>
+<body>
+<div class='main'>
+	<div class='btnBar'>
+		<div id='btnBox1'>
+			<div class='btn_style1'></div>
+			<div class='btn_style1'></div>
+			<div class='btn_style1'></div>
+			<div class='btn_style1'></div>
+			<div class='btn_style1'></div>
+			<div class='btn_style1'></div>
+			<div class='btn_style1'></div>
+			<div class='btn_style1'></div>
+			<div class='btn_style1'></div>
+		</div>
+		<div id='btnBox2'>
+			<div class='btn_style2'>
+				<div class='btn_style3_1'></div>
+				<div class='btn_style3_2'>
+					<div class='btn_style3_3'></div>
+				</div>
+			</div>
+			<div class='btn_style2'>
+				<div class='btn_style3_1'></div>
+				<div class='btn_style3_2'>
+					<div class='btn_style3_3'></div>
+				</div>
+			</div>
+			<div class='btn_style2'>
+				<div class='btn_style3_1'></div>
+				<div class='btn_style3_2'>
+					<div class='btn_style3_3'></div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class='imgList'>
+		<div class='item1 item'>
+			<div class='img'></div>
+			<div class='detail_cntr'>
+				<div class='detail detail1'><span class='text'>WE ARE ANONYMOUS</span></div>
+			</div>
+		</div>
+		<div class='item2 item'>
+			<div class='img'></div>
+			<div class='detail_cntr'>
+				<div class='detail detail2'><span class='text'>WE ARE ANONYMOUS</span></div>
+			</div>
+		</div>
+		<div class='item3 item'>
+			<div class='img'></div>
+			<div class='detail_cntr'>
+				<div class='detail detail3'><span class='text'>WE ARE ANONYMOUS</span></div>
+			</div>
+		</div>
+		<div class='item4 item'>
+			<div class='img'></div>
+			<div class='detail_cntr'>
+				<div class='detail detail4'><span class='text'>WE ARE ANONYMOUS</span></div>
+			</div>
+		</div>
+		<div class='item5 item'>
+			<div class='img'></div>
+			<div class='detail_cntr'>
+				<div class='detail detail5'><span class='text'>WE ARE ANONYMOUS</span></div>
+			</div>
+		</div>
+		<div class='item6 item'>
+			<div class='img'></div>
+			<div class='detail_cntr'>
+				<div class='detail detail6'><span class='text'>WE ARE ANONYMOUS</span></div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+	function start(){
+		$('.item').each(function(i){
+			var $this = $(this);
+			$this.css({
+				left: 700*Math.random(),
+				top: 400*Math.random(),
+			})
+		})
+	}
+	start();
+	$('#btnBox1').bind('mouseenter',function(){
+		$('.btn_style1').each(function(i){
+			var $this = $(this);
+			$this.css({
+				position:'absolute',
+				left: 70*Math.random(),
+				top: 70*Math.random(),
+			})
+		})
+	})
+	$('#btnBox1').bind('mouseleave',function(){
+		$('.btn_style1').each(function(i){
+			var $this = $(this);
+			if(i<3){
+				$this.css({
+					left: 32*i,
+					top: 0,	})
+				}
+			else if(i<6){
+				$this.css({
+					left: 32*(i-3),
+					top: 32,})	
+				}		
+			else{
+				$this.css({
+					left: 32*(i-6),
+					top: 64,})		
+				}		
+		})
+	})
+	$('#btnBox2').bind('mouseenter',function(){
+		$('.btn_style3_3').each(function(i){
+			var $this = $(this);
+			$this.css({
+				left:-62,
+				position: 'absolute',
+			})
+		})
+	})
+	$('#btnBox2').bind('mouseleave',function(){
+		$('.btn_style3_3').each(function(i){
+			var $this = $(this);
+			$this.css({
+				left:0,
+			})
+		})
+	})
+	$('#btnBox1').bind('click',function(){
+		$('.item').each(function(i){
+			var $this = $(this);
+			$this.css({
+				left: 750*Math.random(),
+				top: 400*Math.random(),
+			})
+		})
+		$('.detail').each(function(j){
+			var $this = $(this);
+			$this.css({
+				left: -300,
+			})
+		})
+	})
+	$('#btnBox2').bind('click',function(){
+		$('.item').each(function(i){
+			var $this = $(this);
+			if(i<2){
+				$this.css({
+					left: 660*i,
+					top: 0,	})
+				}
+			else if(i<4){
+				$this.css({
+					left: 660*(i-2),
+					top: 280,})	
+				}		
+			else{
+				$this.css({
+					left: 660*(i-4),
+					top: 550,})		
+				}
+			})
+		setTimeout(function() {
+			$('.detail').each(function(j){
+				var $this = $(this);
+				$this.css({
+					left:0,
+				})
+			})
+		}, 500);		
+	})
+	$('.img').bind('mouseenter',function(){
+		var $this = $(this);
+		$this.css({
+			'background': "url('black2.png')" ,
+			'background-repeat':'no-repeat' ,
+			'z-index':998,
+		})
+	})
+	$('.img').bind('mouseleave',function(){
+		var $this = $(this);
+		$this.css({
+			'background': 'url("black1.png")',
+			'background-repeat':'no-repeat',
+			'z-index':500,
+		})
+	})
+	//body.addEventListener()
+</script>
+</html>
